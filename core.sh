@@ -6,9 +6,6 @@
 ### Core aliases
 
 
-### Convenience aliases
-alias restart='source $HOME/.custom/startup.sh'
-
 ### Editor aliases
 alias w="webstorm"
 alias g="goland"
@@ -45,9 +42,6 @@ alias nglint="npm run lint"
 
 ### Core paths ###
 
-
-### Location of .custom
-export CUSTOMPATH="$HOME/.custom"
 
 ### Development path
 export DEVPATH="$HOME/Development"

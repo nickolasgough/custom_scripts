@@ -1,6 +1,13 @@
 #!/bin/bash
 
-### Custom startup script ###
+### Custom startup ###
+
+
+### Convenience aliases
+alias restart='source $HOME/.custom/startup.sh'
+
+### Location of .custom
+export CUSTOMPATH="$HOME/.custom"
 
 
 ### Load custom core
