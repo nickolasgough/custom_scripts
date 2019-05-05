@@ -43,6 +43,10 @@ alias nglint="npm run lint"
 ### Core paths ###
 
 
+### Subline path
+export SPATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+export PATH="$PATH:$SPATH"
+
 ### Development path
 export DEVPATH="$HOME/Development"
 export PROJECTS="$HOME/Projects"
