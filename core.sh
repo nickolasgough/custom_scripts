@@ -22,12 +22,12 @@ alias go="cd $HOME/go"
 
 ### Git aliases
 alias master="git checkout master"
-alias checkout="git checkout"
+# alias checkout="git checkout"
 alias branch="git branch"
 alias pull="git pull"
 alias status="git status"
 alias add="git add"
-alias commit="git commit -m"
+# alias commit="git commit -m"
 alias push="git push"
 alias fuck='git push --set-upstream origin `active_branch`'
 alias merge="git merge"
@@ -60,6 +60,15 @@ is_repo() {
     fi
 }
 
+### Get the git directory
+git_dir() {
+    if [ `is_repo` = true ]; then
+        git rev-parse --git-dir
+    else
+        echo ""
+    fi
+}
+
 ### Get git branch name
 active_branch() {
     git branch | grep "^*" | cut -d " " -f 2
@@ -73,7 +82,7 @@ color_text() {
 ### Custom function to list all colors
 list_colors() {
     color=0
-    while [ "$color" -lt 100 ]; do
+    while [ $color -lt 100 ]; do
         text="`color_text "Hello, World!" "$color"`"
         echo "$text"
         color=$((color + 1))

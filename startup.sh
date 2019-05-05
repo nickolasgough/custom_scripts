@@ -23,15 +23,26 @@ source $HOME/.custom/paths.sh
 source $CUSTOMPATH/functions.sh
 
 
+### Custom vgit commands
+source ~/vgit/vgit.sh
+
+
 ### Custom terminal prompt
 prompt_command() {
-	directory="`color_text "\W" "93"`"
+	directory="`color_text "\W" "92"`"
 	if [ `is_repo` = true ]; then
 		branch="`active_branch`"
-		start="`color_text "git:(" "95"`"
-		middle="`color_text "${branch}" "96"`"
-		end="`color_text ")" "95"`"
-		prompt="${directory} ${start}${middle}${end}"
+		jira="`extract_jira $branch`"
+
+		gstart="`color_text "git:(" "95"`"
+		gmiddle="`color_text "${branch}" "96"`"
+		gend="`color_text ")" "95"`"
+
+		jstart="`color_text "jira:(" "93"`"
+		jmiddle="`color_text "${jira}" "91"`"
+		jend="`color_text ")" "93"`"
+
+		prompt="${directory} ${gstart}${gmiddle}${gend} ${jstart}${jmiddle}${jend}"
 	else
 		prompt="${directory}"
 	fi
