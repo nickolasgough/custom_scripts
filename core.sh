@@ -44,7 +44,7 @@ alias nglint="npm run lint"
 
 
 ### Subline path
-export SPATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+export SPATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 export PATH="$PATH:$SPATH"
 
 ### Development path
