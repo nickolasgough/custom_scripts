@@ -32,7 +32,7 @@ prompt_command() {
 	directory="`color_text "\W" "92"`"
 	if [ `is_repo` = true ]; then
 		branch="`active_branch`"
-		jira="`extract_jira $branch`"
+		jira="`extract_jira "$branch"`"
 
 		gstart="`color_text "git:(" "95"`"
 		gmiddle="`color_text "${branch}" "96"`"
