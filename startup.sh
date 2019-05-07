@@ -29,20 +29,25 @@ source ~/vgit/vgit.sh
 
 ### Custom terminal prompt
 prompt_command() {
-	directory="`color_text "\W" "92"`"
+	directory="`color_text "\W" "93"`"
 	if [ `is_repo` = true ]; then
 		branch="`active_branch`"
 		jira="`extract_jira "$branch"`"
+		venv="`current_venv`"
 
 		gstart="`color_text "git:(" "95"`"
-		gmiddle="`color_text "${branch}" "96"`"
+		gmiddle="`color_text "${branch}" "95"`"
 		gend="`color_text ")" "95"`"
 
-		jstart="`color_text "jira:(" "93"`"
-		jmiddle="`color_text "${jira}" "91"`"
-		jend="`color_text ")" "93"`"
+		jstart="`color_text "jira:(" "96"`"
+		jmiddle="`color_text "${jira}" "96"`"
+		jend="`color_text ")" "96"`"
 
-		prompt="${directory} ${gstart}${gmiddle}${gend} ${jstart}${jmiddle}${jend}"
+		vstart="`color_text "venv:(" "92"`"
+		vmiddle="`color_text "${venv}" "92"`"
+		vend="`color_text ")" "92"`"
+
+		prompt="${directory} ${gstart}${gmiddle}${gend} ${jstart}${jmiddle}${jend} ${vstart}${vmiddle}${vend}"
 	else
 		prompt="${directory}"
 	fi
