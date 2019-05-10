@@ -18,7 +18,7 @@ alias projects="cd $HOME/Projects"
 alias downloads="cd $HOME/Downloads"
 alias desktop="cd $HOME/Desktop"
 alias custom="cd $HOME/.custom"
-alias go="cd $HOME/go"
+# alias go="cd $HOME/go"
 alias ve="cd $HOME/ve"
 
 ### Git aliases
