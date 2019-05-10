@@ -44,7 +44,11 @@ alias nglint="npm run lint"
 ### Core paths ###
 
 
-### Subline path
+### Command path
+export GPATH="$GOPATH/bin"
+export PATH="$PATH:GPATH"
+
+### Editor path
 export SPATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin"
 export PATH="$PATH:$SPATH"
 

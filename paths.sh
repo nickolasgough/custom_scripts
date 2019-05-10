@@ -7,7 +7,7 @@
 ### Add GoLang path
 export GOPATH="$PROJECTS/go"
 export GOROOT="/usr/local/go"
-export PATH="$PATH:$GOPATH"
+export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$GOROOT/bin"
 
 ### Add Flutter path
