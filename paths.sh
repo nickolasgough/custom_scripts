@@ -17,3 +17,10 @@ export PATH="$PATH:$FLUTTERPATH"
 ### Add Postgres path
 export PSQLPATH="/Library/PostgreSQL/11/bin"
 export PATH="$PATH:$PSQLPATH"
+
+### Add Java path
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home"
+
+### Development path
+export DEVPATH="$HOME/Development"
+export PROJECTS="$HOME/Projects"

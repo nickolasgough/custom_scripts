@@ -10,14 +10,11 @@ alias restart='source $HOME/.custom/startup.sh'
 export CUSTOMPATH="$HOME/.custom"
 
 
-### Load custom core
-source $CUSTOMPATH/core.sh
-
 ### Load custom aliases
 source $CUSTOMPATH/aliases.sh
 
 ### Load custom paths
-source $HOME/.custom/paths.sh
+source $CUSTOMPATH/paths.sh
 
 ### Load custom functions
 source $CUSTOMPATH/functions.sh

@@ -4,6 +4,38 @@
 ### Custom aliases ###
 
 
+### Editor aliases
+alias w="webstorm"
+alias g="goland"
+alias p="pycharm"
+alias s="subl"
+
+### Directory aliases
+alias home="cd $HOME"
+alias projects="cd $HOME/Projects"
+alias downloads="cd $HOME/Downloads"
+alias desktop="cd $HOME/Desktop"
+alias custom="cd $HOME/.custom"
+
+### Git aliases
+alias master="git checkout master"
+alias checkout="git checkout"
+alias branch="git branch"
+alias pull="git pull"
+alias status="git status"
+alias add="git add"
+alias commit="git commit -m"
+alias push="git push"
+alias fuck='git push --set-upstream origin `active_branch`'
+alias merge="git merge"
+alias reset="git reset"
+
+### Angular aliases
+alias ngstart="npm start"
+alias ngrun="npm run dev:$1"
+alias ngtest="npm run test"
+alias nglint="npm run lint"
+
 ### Project aliases
 alias website="cd $PROJECTS/angular/website"
 alias game-net="cd $PROJECTS/flutter/game_net"
@@ -16,11 +48,5 @@ alias scdb="psql -U postgres -d socialclouddb"
 
 ### School aliases
 alias archive="cd $HOME/Desktop/archive"
-alias cmpt400="cd $HOME/Desktop/cmpt400"
-alias cmpt434="cd $HOME/Desktop/cmpt434"
-alias cmpt463="cd $HOME/Desktop/cmpt463"
-alias wgst112="cd $HOME/Desktop/wgst112"
-alias biol224="cd $HOME/Desktop/biol224"
-alias cmpt370="cd $HOME/Desktop/cmpt370"
 alias tuxworld="ssh nvg081@tuxworld.usask.ca"
 alias projworld="ssh nvg081@cmpt400g1.usask.ca"
