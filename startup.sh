@@ -11,18 +11,14 @@ alias restart='source $HOME/.custom/startup.sh'
 export CUSTOMPATH="$HOME/.custom"
 
 
-### Load custom aliases
-source $CUSTOMPATH/aliases.sh
-
 ### Load custom paths
 source $CUSTOMPATH/paths.sh
 
+### Load custom aliases
+source $CUSTOMPATH/aliases.sh
+
 ### Load custom functions
 source $CUSTOMPATH/functions.sh
-
-
-### Custom vgit commands
-source ~/vgit/vgit.sh
 
 
 ### Custom terminal prompt
