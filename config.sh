@@ -5,7 +5,6 @@
 
 
 ### Google cloud SDK
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/nickolas-gough/google-cloud-sdk/path.zsh.inc' ];
     then . '/Users/nickolas-gough/google-cloud-sdk/path.zsh.inc';

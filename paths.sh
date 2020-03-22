@@ -4,6 +4,10 @@
 ### Custom paths ###
 
 
+### Development path
+export DEVPATH="$HOME/Development"
+export PROJECTS="$HOME/Projects"
+
 ### Add GoLang path
 export GOPATH="$PROJECTS/go"
 export GOROOT="/usr/local/go"
@@ -20,7 +24,3 @@ export PATH="$PATH:$PSQLPATH"
 
 ### Add Java path
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.5.jdk/Contents/Home"
-
-### Development path
-export DEVPATH="$HOME/Development"
-export PROJECTS="$HOME/Projects"
